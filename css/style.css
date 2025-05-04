@@ -155,7 +155,6 @@ body {
 .secondFooter {
   display: flex;
   gap: 64px;
-  width: 50%;
 }
 
 .aboutFooter {
@@ -213,6 +212,12 @@ body {
   color: #151515;
 }
 
+.vkContainer svg,
+.telegramContainer svg,
+.wupContainer svg {
+  width: 100%;
+}
+
 .wupContainer {
   color: rgb(1, 66, 255);
 }
@@ -238,10 +243,87 @@ body {
   color: #777777;
 }
 
+.footerTablet {
+  display: none;
+  background-color: #151515;
+  padding-top: 35px;
+  color: #ffffff;
+}
+
+.fourFooter {
+  padding-inline: 32px;
+  margin-top: 34px;
+}
+
+.footerPhone {
+  display: none;
+  background-color: #151515;
+  color: #ffffff;
+  padding-top: 19px;
+  padding-bottom: 60px;
+}
+
 /* main */
 
 .main {
   padding-top: 124px;
+}
+
+@media (max-width: 1400px) {
+  .footer {
+    display: none;
+  }
+
+  .firstFooter p {
+    font-size: 42px;
+  }
+
+  .firstFooter,
+  .secondFooterContainer {
+    padding-inline: 32px;
+  }
+
+  .logoFooter svg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .footerTablet {
+    display: block;
+  }
+
+  .aboutFooter {
+    width: 100%;
+    margin-top: -5px;
+  }
+
+  .aboutFooter h2 {
+    font-size: 20px;
+  }
+
+  .linksBuyers {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sotialsContainer {
+    margin: 0;
+    padding-inline: 32px;
+    width: 100%;
+    margin-top: 34px;
+  }
+
+  .sotialLinksContainer {
+    justify-content: space-between;
+  }
+
+  .thirdFooter {
+    margin-top: 32px;
+  }
+
+  .secondFooter {
+    gap: 32px;
+  }
 }
 
 @media (max-width: 1133px) {
@@ -270,5 +352,85 @@ body {
 
   .menuMobileContainer {
     display: flex;
+  }
+
+  .footerTablet {
+    display: none;
+  }
+
+  .footerPhone {
+    display: block;
+  }
+
+  .titleFooter {
+    font-size: 28px;
+    text-align: center;
+    padding-inline: 16px;
+  }
+
+  .logoFooter {
+    width: max-content;
+    margin: 40px auto 32px;
+  }
+
+  .logoFooter svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutFooter {
+    padding-inline: 16px;
+    text-align: center;
+  }
+
+  .fourFooter {
+    padding: 0;
+    margin-inline: auto;
+    width: max-content;
+  }
+
+  .linksBuyers {
+    flex-direction: column;
+  }
+
+  .emailContainer {
+    font-size: 20px;
+    width: max-content;
+    margin-inline: auto;
+  }
+
+  .sotialsContainer {
+    margin-top: 16px;
+  }
+
+  .vkContainer,
+  .telegramContainer,
+  .wupContainer {
+    background-color: #fff;
+    width: 100%;
+    height: 42px;
+    border-radius: 10000px;
+    position: relative;
+  }
+
+  .wupContainer {
+    background-color: blue;
+  }
+
+  .vkContainer svg,
+  .telegramContainer svg,
+  .wupContainer svg {
+    position: absolute;
+    top: 35%;
+  }
+
+  .sotialsContainer .paragraph {
+    text-align: center;
+  }
+
+  .thirdFooterText {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 }
