@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+  background-color: #fff;
+}
+
+.header {
+  padding-inline: 76px;
+}
+
+.viewport1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efefef;
+}
