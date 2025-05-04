@@ -51,6 +51,10 @@ body {
   gap: 40px;
 }
 
+.logoContainer {
+  height: 33px;
+}
+
 .logoContainer svg {
   color: #0142ff;
 }
