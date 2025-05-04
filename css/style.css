@@ -1,14 +1,33 @@
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/mont/Montserrat-Light.ttf") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Mont;
+}
+
 .header {
   position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.mainHeader {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 124px;
-  background-color: #fff;
 }
 
-.header {
+.mainHeader {
   padding-inline: 76px;
 }
 
@@ -26,4 +45,50 @@
 
 .logoContainer svg {
   color: #0142ff;
+}
+
+.promo {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  height: 57px;
+  background-color: #0142ff;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.promoTrack {
+  display: flex;
+  width: max-content;
+  animation: scrollPromo 50s linear infinite;
+}
+
+.promoTextContainer {
+  display: flex;
+  gap: 32px;
+  white-space: nowrap;
+}
+
+@keyframes scrollPromo {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.promo p {
+  flex-shrink: 0;
+}
+
+.accountBasketContainer {
+  display: flex;
+  gap: 12px;
+}
+
+/* main */
+
+.main {
+  padding-top: 124px;
 }
