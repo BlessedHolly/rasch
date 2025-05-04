@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Mont";
-  src: url("/fonts/mont/Montserrat-Medium.ttf") format("woff2");
+  src: url("/fonts/mont/Mont-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont-light";
+  src: url("/fonts/mont/Mont-Light.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
@@ -16,7 +23,7 @@ body {
   flex-direction: column;
   background-color: #fff;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
@@ -60,7 +67,7 @@ body {
 }
 
 .promo {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
   display: flex;
   align-items: center;
@@ -129,8 +136,106 @@ body {
 
 .footer {
   background-color: #151515;
+
+  padding-top: 67px;
+  color: #ffffff;
+}
+
+.firstFooter {
+  margin-bottom: 44px;
+  font-size: 52px;
   padding-inline: 64px;
-  color: ;
+}
+
+.secondFooterContainer {
+  display: flex;
+  padding-inline: 64px;
+}
+
+.secondFooter {
+  display: flex;
+  gap: 64px;
+  width: 50%;
+}
+
+.aboutFooter {
+  width: 425px;
+}
+
+.aboutFooter h2,
+.buyers h2 {
+  color: #606060;
+  margin-bottom: 18px;
+}
+
+.aboutFooter p {
+  font-family: Mont-light;
+  font-size: 16px;
+}
+
+.moreDetails {
+  margin-top: 16px;
+}
+
+.linksBuyers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 20px;
+}
+
+.sotialsContainer {
+  width: 313px;
+  margin-left: auto;
+}
+
+.sotialsContainer .paragraph {
+  font-family: Mont-light;
+}
+
+.emailContainer {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+
+.emailContainer span {
+  color: blue;
+}
+
+.sotialLinksContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.vkContainer path,
+.telegramContainer path {
+  color: #151515;
+}
+
+.wupContainer {
+  color: rgb(1, 66, 255);
+}
+
+.wupContainer path {
+  color: #fff;
+}
+
+.thirdFooter {
+  display: flex;
+  align-items: center;
+  height: 86px;
+  margin-top: 64px;
+  border-top: 1px solid #3b3b3b;
+}
+
+.thirdFooterText {
+  width: 100%;
+  padding-inline: 64px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Mont-light;
+  color: #777777;
 }
 
 /* main */
