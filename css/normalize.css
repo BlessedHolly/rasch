@@ -188,3 +188,7 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+
+p {
+  margin: 0;
+}

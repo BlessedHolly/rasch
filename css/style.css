@@ -17,3 +17,13 @@
   width: 100%;
   background-color: #efefef;
 }
+
+.brandContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logoContainer svg {
+  color: #0142ff;
+}
