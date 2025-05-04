@@ -383,6 +383,7 @@ body {
     background-position: top center, center 180px;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, auto 100%;
+    background-attachment: fixed;
   }
 
   .mainHeader {
