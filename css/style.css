@@ -12,6 +12,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Mont-regular";
+  src: url("/fonts/mont/Mont-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: Mont;
 }
@@ -44,12 +51,6 @@ body {
 
 .mainHeader {
   padding-inline: 76px;
-}
-
-.viewport1 {
-  height: 100vh;
-  width: 100%;
-  background-color: #efefef;
 }
 
 .brandContainer {
@@ -265,8 +266,49 @@ body {
 
 /* main */
 
-.main {
-  padding-top: 124px;
+.viewport1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/images/viewport1.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right 180px;
+}
+
+.pattern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #a2b7f4;
+  width: 124px;
+  height: 124px;
+  gap: 10px;
+  color: #0142ff52;
+}
+
+.leftPart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 245px 0 64px 64px;
+}
+
+.logoPattern {
+  color: #0142ff;
+}
+
+.mainTitle {
+  font-size: 64px;
+}
+
+.motto {
+  font-size: 24px;
+  font-family: Mont-regular;
+  max-width: 585px;
+  margin-bottom: 42px;
 }
 
 @media (max-width: 1400px) {
@@ -336,8 +378,52 @@ body {
     display: block;
   }
 
+  .viewport1 {
+    background-image: url("/images/vieport1Mobile.png");
+    background-position: top center, center 180px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 100%;
+  }
+
   .mainHeader {
     padding-inline: 40px;
+  }
+
+  .pattern {
+    display: none;
+  }
+
+  .mainTitle {
+    font-size: 47px;
+    text-align: center;
+  }
+
+  .mainTextContainer {
+    color: white;
+  }
+
+  .motto {
+    font-size: 18px;
+    max-width: 488px;
+    padding-inline: 43px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .leftPart {
+    padding-inline: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .catalogBtn {
+    width: max-content;
+    margin: 24px auto 0;
+  }
+
+  .catalogBtn svg {
+    width: 216px;
+    height: 66px;
   }
 }
 
