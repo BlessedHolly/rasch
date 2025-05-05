@@ -127,6 +127,7 @@ body {
   padding-inline: 40px;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .menuMobileContainer svg {
@@ -266,6 +267,10 @@ body {
 
 /* main */
 
+.main {
+  margin-bottom: 107px;
+}
+
 .viewport1 {
   height: 100vh;
   width: 100%;
@@ -309,6 +314,113 @@ body {
   font-family: Mont-regular;
   max-width: 585px;
   margin-bottom: 42px;
+}
+
+.viewport2 {
+  margin-top: 107px;
+  margin-bottom: 107px;
+}
+
+.mainH2 {
+  font-size: 52px;
+  padding-inline: 64px;
+}
+
+.cardsContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.cardsContainer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-left: 64px;
+  padding-bottom: 68px;
+}
+
+.cardsWrapper {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.nextBtn,
+.backtBtn {
+  position: absolute;
+  right: 40px;
+  top: 217px;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.backtBtn {
+  left: 104px;
+  display: none;
+  z-index: 10;
+}
+
+.backtBtn svg {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.card {
+  width: 663px;
+  flex-shrink: 0;
+}
+
+.cardImg {
+  height: 600px;
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-family: Mont-regular;
+}
+
+.cardDescription {
+  font-size: 20px;
+  font-family: Mont-Light;
+}
+
+.scale {
+  position: absolute;
+  width: 531px;
+  height: 2px;
+  background-color: #efeeec;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.scalePart {
+  height: 3px;
+  background-color: #0142ff;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.viewport3 {
+  display: flex;
+}
+
+.leftPart3 {
+  width: 50%;
+}
+
+.rightPart3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #151515;
 }
 
 @media (max-width: 1400px) {
